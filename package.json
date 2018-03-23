@@ -1,0 +1,23 @@
+{
+  "name": "flow",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "install": "^0.11.0",
+    "jsplumb": "^2.6.9",
+    "npm": "^5.7.1",
+    "pug": "^2.0.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "live-server": "^1.2.0",
+    "pug-server": "^0.1.1"
+  }
+}

@@ -1,0 +1,35 @@
+#container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+}
+
+html, body {
+    height:100%;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.brick {
+  width: 100px;
+  height: 50px;
+
+  position: absolute;
+}
+
+.connect {
+  background-color: yellow;
+  width: 15px;
+  height: 15px;
+}
