@@ -111,7 +111,7 @@ class JsPlumbWrapper {
   // }
   //
   constructor(settings, container, nodes, edges) {
-    this.container = container
+    this.container = container//.querySelector('.jtk-surface-canvas')
 
     jsPlumb.importDefaults(settings)
     jsPlumb.setContainer(this.container)
@@ -164,7 +164,8 @@ class JsPlumbWrapper {
   }
 
   initJsPlumb() {
-    var els = [this.container].concat(this.nodes.map((n) => n.el))
+    //[this.container].concat()
+    var els = this.nodes.map((n) => n.el)
 
     els.forEach((el) => this._makeDraggable(el))
 
@@ -195,7 +196,9 @@ class JsPlumbWrapper {
         drag: _onDrag,
         filter: `${connectCss}, ${connectCss} *, .${removeCssClass} *`,
         filterExclude: true,
-        magnetize: true
+        magnetize: true,
+        containment:true
+        // grid:[550,550]
       }
     )
   }
